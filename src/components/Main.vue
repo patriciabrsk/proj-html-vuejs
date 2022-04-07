@@ -48,10 +48,6 @@ section.jumbotron {
     height: 300px;
   }
 
-  //   div.jumbotron-bg {
-  //     height: inherit;
-  //     width: inherit;
-  //   }
   .jumbotron-img {
   }
   button {
