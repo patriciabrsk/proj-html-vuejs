@@ -1,8 +1,6 @@
 <template>
-  <header class="pt-2 px-5">
-    <nav
-      class="navbar container d-flex justify-content-between align-items-center"
-    >
+  <header class="pt-2 container wv-100">
+    <nav class="navbar d-flex justify-content-between align-items-center">
       <div class="nav-logo">
         <img :src="logo" alt="logo" />
       </div>
@@ -25,11 +23,9 @@
         </ul>
         <div class="icons d-flex me-5">
           <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="me-3" />
-          <div class="cart">
-            <font-awesome-icon
-              icon="fa-solid fa-cart-shopping position-relative"
-            />
-          </div>
+          <font-awesome-icon
+            icon="fa-solid fa-cart-shopping position-relative"
+          />
         </div>
         <div class="button">
           <button type="button" class="btn text-white px-3">Get Started</button>

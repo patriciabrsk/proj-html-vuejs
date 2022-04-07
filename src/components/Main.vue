@@ -1,18 +1,18 @@
 <template>
-  <main class="mt-5">
-    <section class="jumbotron d-flex rounded-3 p-5">
-      <div class="text-box w-50">
+  <main class="mt-5 container">
+    <section
+      class="jumbotron container d-flex align-items-center rounded-3 p-5"
+    >
+      <div class="text-box ps-2 w-50">
         <!-- <h1>{{ jumbotron.title }}</h1> -->
-        <h1>The biggest platform for your growth</h1>
-        <p>
+        <h1 class="mb-4">The biggest platform for your growth</h1>
+        <p class="mb-5">
           There are many variations of passages of Lorem ipsum available, but
           the majority have suffered alteration in some form
         </p>
-        <button type="button" class="mt-3 btn text-white px-3">
-          Read More
-        </button>
+        <button type="button" class="btn text-white px-3">Read More</button>
       </div>
-      <div class="jumbotron-img position-absolute top-10 start-70">
+      <div class="jumbotron-img position absolute">
         <img :src="jumbotronImg" alt="" class="img-fluid" />
       </div>
     </section>
@@ -41,14 +41,18 @@ export default {
 @import "../assets/style/style.scss";
 
 section.jumbotron {
-  height: 100%;
-  width: 100%;
   background-color: #f2f7ff;
+  height: 425px;
   .text-box {
-    height: 300px;
+    h1 {
+      font-size: 3rem;
+    }
   }
 
   .jumbotron-img {
+    position: absolute;
+    top: 115px;
+    right: 80px;
   }
   button {
     background-color: $brandBlue;
