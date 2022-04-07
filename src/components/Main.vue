@@ -3,9 +3,9 @@
     <section
       class="jumbotron container d-flex align-items-center rounded-3 p-5"
     >
-      <div class="text-box ps-2 w-50">
+      <div class="text-box ps-2">
         <!-- <h1>{{ jumbotron.title }}</h1> -->
-        <h1 class="mb-4">The biggest platform for your growth</h1>
+        <h1 class="mb-4">The biggest platform for your growth.</h1>
         <p class="mb-5">
           There are many variations of passages of Lorem ipsum available, but
           the majority have suffered alteration in some form
@@ -44,6 +44,7 @@ section.jumbotron {
   background-color: #f2f7ff;
   height: 425px;
   .text-box {
+    width: 40%;
     h1 {
       font-size: 3rem;
     }
@@ -52,7 +53,7 @@ section.jumbotron {
   .jumbotron-img {
     position: absolute;
     top: 115px;
-    right: 80px;
+    right: 100px;
   }
   button {
     background-color: $brandBlue;
