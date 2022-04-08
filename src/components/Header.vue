@@ -1,6 +1,8 @@
 <template>
-  <header class="pt-2 container wv-100">
-    <nav class="navbar d-flex justify-content-between align-items-center">
+  <header class="pt-2">
+    <nav
+      class="navbar container px-5 d-flex justify-content-between align-items-center"
+    >
       <div class="nav-logo">
         <img :src="logo" alt="logo" />
       </div>
@@ -84,12 +86,13 @@ header {
   .nav-leftside {
     ul.nav-links {
       li {
-        &:active,
+        border-bottom: 3px solid transparent;
+        &:hover,
         &.active {
-          border-bottom: 3px solid blue;
+          border-bottom: 3px solid $brandBlue;
         }
         a {
-          color: #495057;
+          color: $brandTxtDarkGrey;
         }
       }
     }

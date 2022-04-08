@@ -1,2 +1,6 @@
 @import "~bootstrap/scss/bootstrap.scss";
 @import "./partials/_variables.scss";
+
+body, html {
+    height: 100%;
+}

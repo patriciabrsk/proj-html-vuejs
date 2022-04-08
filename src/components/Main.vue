@@ -1,7 +1,7 @@
 <template>
   <main class="mt-5 container">
     <section
-      class="jumbotron container d-flex align-items-center rounded-3 p-5"
+      class="jumbotron container d-flex align-items-center rounded-3 p-5 mb-5"
     >
       <div class="text-box ps-2">
         <!-- <h1>{{ jumbotron.title }}</h1> -->
@@ -12,8 +12,36 @@
         </p>
         <button type="button" class="btn text-white px-3">Read More</button>
       </div>
-      <div class="jumbotron-img position absolute">
+      <div class="jumbotron-img">
         <img :src="jumbotronImg" alt="" class="img-fluid" />
+      </div>
+    </section>
+
+    <section class="online-marketing container px-5">
+      <div class="row row-cols-3 py-5">
+        <div class="d-flex flex-row col py-5" v-for="index in 3" :key="index">
+          <div class="icon pe-2">
+            <img :src="marketingImg" alt="" class="img-fluid" />
+          </div>
+          <div class="text">
+            <h5>Online Marketing</h5>
+            <p class="mb-4">
+              It is a long established fact that a reader will be distracted.
+            </p>
+            <ul class="p-0">
+              <li
+                class="list-unstyled"
+                v-for="list in marketingList"
+                :key="list"
+              >
+                <span class="check-icon me-2">
+                  <font-awesome-icon icon="fa-solid fa-check" />
+                </span>
+                <h6>{{ list }}</h6>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -25,6 +53,8 @@ export default {
   data() {
     return {
       jumbotronImg: require("../assets/img/27-1.png"),
+      marketingList: ["SEO", "SEM", "Website Strategy", "Social Management"],
+      marketingImg: require("../assets/img/24.png"),
       //   jumbotron: [
       //     {
       //       title: "The biggest platform for your growth",
@@ -43,7 +73,8 @@ export default {
 section.jumbotron {
   background-color: #f2f7ff;
   height: 425px;
-  .text-box {
+
+  div.text-box {
     width: 40%;
     h1 {
       font-size: 3rem;
@@ -57,6 +88,29 @@ section.jumbotron {
   }
   button {
     background-color: $brandBlue;
+  }
+}
+
+section.online-marketing {
+  height: 600px;
+
+  div.icon {
+    width: 20%;
+  }
+  div.text {
+    width: 60%;
+    p {
+      color: $brandTxtGrey;
+    }
+    li {
+      h6 {
+        display: inline-block;
+        font-size: 0.9rem;
+      }
+      span.check-icon {
+        color: $brandBlue;
+      }
+    }
   }
 }
 </style>
