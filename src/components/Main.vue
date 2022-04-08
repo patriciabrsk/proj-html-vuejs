@@ -20,7 +20,7 @@
     <section class="online-marketing container inner-container">
       <div class="row row-cols-3 d-flex py-5">
         <div
-          class="d-flex flex-row justify-content-center col section-card mt-5 px-0"
+          class="d-flex flex-row col section-card mt-5 px-0"
           v-for="index in 3"
           :key="index"
         >
@@ -49,10 +49,14 @@
       </div>
     </section>
 
-    <section class="sales d-flex">
-      <div class="text-wrapper"></div>
+    <section class="sales container d-flex inner-container">
+      <div class="text-wrapper">
+        <div class="text">
+          <h2>Get tips and tricks on how to skyrocket your sales.</h2>
+        </div>
+      </div>
       <div class="sales-img">
-        <img src="" alt="" />
+        <img :src="salesImg" alt="" />
       </div>
     </section>
   </main>
@@ -64,8 +68,9 @@ export default {
   data() {
     return {
       jumbotronImg: require("../assets/img/27-1.png"),
-      marketingList: ["SEO", "SEM", "Website Strategy", "Social Management"],
       marketingImg: require("../assets/img/24.png"),
+      salesImg: require("../assets/img/509.jpeg"),
+      marketingList: ["SEO", "SEM", "Website Strategy", "Social Management"],
       //   jumbotron: [
       //     {
       //       title: "The biggest platform for your growth",
@@ -114,7 +119,7 @@ section.jumbotron {
 }
 
 section.online-marketing {
-  height: 600px;
+  height: 400px;
 
   div.icon {
     width: 18%;
