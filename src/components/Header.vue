@@ -1,7 +1,7 @@
 <template>
-  <header class="pt-2">
+  <header>
     <nav
-      class="navbar container px-5 d-flex justify-content-between align-items-center"
+      class="navbar container d-flex justify-content-between align-items-center"
     >
       <div class="nav-logo">
         <img :src="logo" alt="logo" />
@@ -80,8 +80,11 @@ export default {
 
 header {
   height: 50px;
-  img {
-    width: 50px;
+  nav.navbar {
+    padding: 20px 100px;
+    img {
+      width: 50px;
+    }
   }
   .nav-leftside {
     ul.nav-links {

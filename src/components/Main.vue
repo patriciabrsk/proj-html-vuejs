@@ -17,16 +17,14 @@
       </div>
     </section>
 
-    <section
-      class="online-marketing container d-flex justify-content-center px-5"
-    >
-      <div class="row row-cols-3 py-5">
+    <section class="online-marketing container inner-container">
+      <div class="row row-cols-3 d-flex py-5">
         <div
-          class="d-flex flex-row col section-card px-0 py-5"
+          class="d-flex flex-row justify-content-center col section-card mt-5 px-0"
           v-for="index in 3"
           :key="index"
         >
-          <div class="icon pe-2">
+          <div class="icon me-4">
             <img :src="marketingImg" alt="" class="img-fluid" />
           </div>
           <div class="text">
@@ -48,6 +46,13 @@
             </ul>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="sales d-flex">
+      <div class="text-wrapper"></div>
+      <div class="sales-img">
+        <img src="" alt="" />
       </div>
     </section>
   </main>
@@ -112,7 +117,7 @@ section.online-marketing {
   height: 600px;
 
   div.icon {
-    width: 20%;
+    width: 18%;
   }
   div.text {
     width: 60%;
