@@ -17,9 +17,15 @@
       </div>
     </section>
 
-    <section class="online-marketing container px-5">
+    <section
+      class="online-marketing container d-flex justify-content-center px-5"
+    >
       <div class="row row-cols-3 py-5">
-        <div class="d-flex flex-row col py-5" v-for="index in 3" :key="index">
+        <div
+          class="d-flex flex-row col section-card px-0 py-5"
+          v-for="index in 3"
+          :key="index"
+        >
           <div class="icon pe-2">
             <img :src="marketingImg" alt="" class="img-fluid" />
           </div>
@@ -62,6 +68,14 @@ export default {
       //       img: require("../assets/img/27-1.png"),
       //     },
       //   ],
+      //   marketing: [
+      //     {
+      //       img: require("../assets/img/24.png"),
+      //       title: "Online Marketing",
+      //       text: "It is a long established fact that a reader will be distracted.",
+      //       list: ["SEO", "SEM", "Website Strategy", "Social Management"],
+      //     },
+      //   ],
     };
   },
 };
@@ -72,8 +86,11 @@ export default {
 
 section.jumbotron {
   background-color: #f2f7ff;
-  height: 425px;
+  height: 400px;
 
+  .section-card {
+    width: 200px;
+  }
   div.text-box {
     width: 40%;
     h1 {
