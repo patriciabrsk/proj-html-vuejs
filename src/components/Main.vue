@@ -98,11 +98,16 @@
           </button>
         </div>
         <div class="cards">
-          <div
-            class="shadow p-3 mb-5 bg-body rounded"
-            v-for="card in features"
-            :key="card"
-          ></div>
+          <div class="row row-cols-4 g-4">
+            <div
+              class="shadow col p-3 bg-body rounded"
+              v-for="element in features"
+              :key="element.id"
+            >
+              <h5>{{ element.title }}</h5>
+              <img src="" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
