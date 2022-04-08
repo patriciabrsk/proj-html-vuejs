@@ -1,6 +1,6 @@
 <template>
   <section class="sales container d-flex inner-container mb-5">
-    <div class="text-wrapper me-4">
+    <div class="text-wrapper me-5">
       <div class="text">
         <h2>Get tips and tricks on how to skyrocket your sales.</h2>
         <p class="py-3">
@@ -9,7 +9,7 @@
         </p>
         <div class="row row-cols-1 d-flex">
           <div
-            class="section-card col p-4 d-flex align-items-center"
+            class="section-card col p-4 d-flex align-items-center rounded"
             v-for="info in sales"
             :key="info.id"
           >

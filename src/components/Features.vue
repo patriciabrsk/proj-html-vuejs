@@ -16,12 +16,12 @@
       <div class="cards">
         <div class="row row-cols-4 g-4">
           <div
-            class="shadow col p-3 bg-body rounded"
+            class="feature col p-3 h-100 rounded"
             v-for="element in features"
             :key="element.id"
           >
             <h5>{{ element.title }}</h5>
-            <img src="" alt="" />
+            <font-awesome-icon :icon="element.icon" size="lg" />
           </div>
         </div>
       </div>
@@ -38,35 +38,35 @@ export default {
       features: [
         {
           title: "Customized Invoices",
-          img: require("../assets/img/510.png"),
+          icon: "fa-solid fa-file-invoice-dollar",
         },
         {
           title: "Stock Management",
-          img: require("../assets/img/510.png"),
+          icon: "fa-solid fa-arrow-trend-up",
         },
         {
           title: "Receivable & Payables",
-          img: require("../assets/img/510.png"),
+          icon: "fa-solid fa-comments-dollar",
         },
         {
           title: "Manage Buying",
-          img: require("../assets/img/510.png"),
+          icon: "fa-solid fa-credit-card",
         },
         {
           title: "Powerful & Secure",
-          img: require("../assets/img/510.png"),
+          icon: "fa-solid fa-shield-halved",
         },
         {
           title: "Fastest Return Filing",
-          img: require("../assets/img/510.png"),
+          icon: "fa-solid fa-folder-open",
         },
         {
           title: "Monthly Detailed",
-          img: require("../assets/img/510.png"),
+          icon: "fa-solid fa-calendar-day",
         },
         {
           title: "Product Management",
-          img: require("../assets/img/510.png"),
+          icon: "fa-solid fa-list-check",
         },
       ],
     };
@@ -78,6 +78,8 @@ export default {
 @import "../assets/style/style.scss";
 
 section.features {
+  background-image: url("../assets/img/14.png");
+  background-repeat: no-repeat;
   .text-wrapper {
     button.btn {
       background-color: $brandBlue;
@@ -88,7 +90,11 @@ section.features {
         width: 60%;
       }
     }
-    button {
+    .cards {
+      .feature {
+        background-color: $white;
+        box-shadow: 0 5px 15px rgba(235, 235, 235, 0.685);
+      }
     }
   }
 }

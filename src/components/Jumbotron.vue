@@ -1,6 +1,6 @@
 <template>
   <section
-    class="jumbotron container d-flex align-items-center rounded-3 p-5 mb-5"
+    class="jumbotron container d-flex align-items-center rounded p-5 mb-5"
   >
     <div class="text-box ps-2">
       <!-- <h1>{{ jumbotron.title }}</h1> -->
