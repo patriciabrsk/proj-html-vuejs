@@ -43,6 +43,12 @@ section.jumbotron {
     h1 {
       font-size: 3rem;
     }
+    p {
+      color: $brandTxtGrey;
+    }
+    button.btn {
+      background-color: $brandBlue;
+    }
   }
 
   .jumbotron-img {

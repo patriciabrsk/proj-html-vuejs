@@ -1,5 +1,5 @@
 <template>
-  <section class="online-marketing container inner-container">
+  <section class="online-marketing container inner-container mb-5">
     <div class="row row-cols-3 d-flex py-5">
       <div
         class="d-flex flex-row col section-card mt-5 px-0"

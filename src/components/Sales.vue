@@ -1,5 +1,5 @@
 <template>
-  <section class="sales container d-flex inner-container">
+  <section class="sales container d-flex inner-container mb-5">
     <div class="text-wrapper me-4">
       <div class="text">
         <h2>Get tips and tricks on how to skyrocket your sales.</h2>
@@ -58,6 +58,9 @@ export default {
 @import "../assets/style/style.scss";
 
 section.sales {
+  p {
+    color: $brandTxtGrey;
+  }
   div.text-wrapper {
     div.text {
       div.section-card {
