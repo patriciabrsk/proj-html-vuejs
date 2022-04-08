@@ -38,10 +38,10 @@
                 v-for="list in marketingList"
                 :key="list"
               >
-                <span class="check-icon me-2">
+                <span class="check-icon me-3">
                   <font-awesome-icon icon="fa-solid fa-check" />
                 </span>
-                <h6>{{ list }}</h6>
+                <span>{{ list }}</span>
               </li>
             </ul>
           </div>
@@ -50,13 +50,60 @@
     </section>
 
     <section class="sales container d-flex inner-container">
-      <div class="text-wrapper">
+      <div class="text-wrapper me-4">
         <div class="text">
           <h2>Get tips and tricks on how to skyrocket your sales.</h2>
+          <p class="py-3">
+            Faff about only a quid blower I don't want no agro bleeding chimney
+            pot burke tosser cras nice one boot fanny!
+          </p>
+          <div class="row row-cols-1 d-flex">
+            <div
+              class="section-card col p-4 d-flex align-items-center"
+              v-for="(value, index) in sales"
+              :key="index"
+            >
+              <div
+                class="icon me-3"
+                v-for="(image, index) in sales"
+                :key="index"
+              >
+                <img :src="image.iconsSrc[index]" alt="" />
+              </div>
+              <div class="card-text">
+                <h5>{{ value.title[index] }}</h5>
+                <p>{{ value.text }}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="sales-img">
         <img :src="salesImg" alt="" />
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container inner-container">
+        <div class="text-wrapper d-flex justify-content-between">
+          <div class="text-info">
+            <h2>Popular features that your business needs</h2>
+            <p>
+              Faff about only a quid blower I don't want no agro bleeding pot
+              burke tosser cras nice one boot fanny!
+            </p>
+          </div>
+          <button type="button" class="btn text-white px-3">
+            Explore More Feature
+          </button>
+        </div>
+        <div class="cards">
+          <div
+            class="shadow p-3 mb-5 bg-body rounded"
+            v-for="card in features"
+            :key="card"
+          ></div>
+        </div>
       </div>
     </section>
   </main>
@@ -69,8 +116,52 @@ export default {
     return {
       jumbotronImg: require("../assets/img/27-1.png"),
       marketingImg: require("../assets/img/24.png"),
-      salesImg: require("../assets/img/509.jpeg"),
       marketingList: ["SEO", "SEM", "Website Strategy", "Social Management"],
+      salesImg: require("../assets/img/509.jpeg"),
+      sales: [
+        {
+          title: ["Reporting Analysis", "Technical SEO Audit"],
+          text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+          iconsSrc: [
+            require("../assets/img/510.png"),
+            require("../assets/img/511.png"),
+          ],
+        },
+      ],
+      features: [
+        {
+          title: "Customized Invoices",
+          img: require("../assets/img/510.png"),
+        },
+        {
+          title: "Stock Management",
+          img: require("../assets/img/510.png"),
+        },
+        {
+          title: "Receivable & Payables",
+          img: require("../assets/img/510.png"),
+        },
+        {
+          title: "Manage Buying",
+          img: require("../assets/img/510.png"),
+        },
+        {
+          title: "Powerful & Secure",
+          img: require("../assets/img/510.png"),
+        },
+        {
+          title: "Fastest Return Filing",
+          img: require("../assets/img/510.png"),
+        },
+        {
+          title: "Monthly Detailed",
+          img: require("../assets/img/510.png"),
+        },
+        {
+          title: "Product Management",
+          img: require("../assets/img/510.png"),
+        },
+      ],
       //   jumbotron: [
       //     {
       //       title: "The biggest platform for your growth",
@@ -93,49 +184,64 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/style/style.scss";
-
-section.jumbotron {
-  background-color: #f2f7ff;
-  height: 400px;
-
-  .section-card {
-    width: 200px;
+main {
+  p {
+    color: $brandTxtGrey;
   }
-  div.text-box {
-    width: 40%;
-    h1 {
-      font-size: 3rem;
+  section.jumbotron {
+    background-color: #f2f7ff;
+    height: 400px;
+
+    .section-card {
+      width: 200px;
     }
-  }
-
-  .jumbotron-img {
-    position: absolute;
-    top: 115px;
-    right: 100px;
-  }
-  button {
-    background-color: $brandBlue;
-  }
-}
-
-section.online-marketing {
-  height: 400px;
-
-  div.icon {
-    width: 18%;
-  }
-  div.text {
-    width: 60%;
-    p {
-      color: $brandTxtGrey;
-    }
-    li {
-      h6 {
-        display: inline-block;
-        font-size: 0.9rem;
+    div.text-box {
+      width: 40%;
+      h1 {
+        font-size: 3rem;
       }
-      span.check-icon {
-        color: $brandBlue;
+    }
+
+    .jumbotron-img {
+      position: absolute;
+      top: 115px;
+      right: 100px;
+    }
+    button {
+      background-color: $brandBlue;
+    }
+  }
+
+  section.online-marketing {
+    height: 400px;
+
+    div.icon {
+      width: 18%;
+    }
+    div.text {
+      width: 60%;
+      li {
+        span {
+          display: inline-block;
+          font-weight: bold;
+          font-size: 0.9rem;
+        }
+        span.check-icon {
+          color: $brandBlue;
+        }
+      }
+    }
+  }
+
+  section.sales {
+    div.text-wrapper {
+      div.text {
+        div.section-card {
+          &:hover {
+            color: $brandBlue;
+            border: 1px solid $borderGrey1;
+          }
+        }
       }
     }
   }
