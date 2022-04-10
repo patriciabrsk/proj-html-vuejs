@@ -1,6 +1,6 @@
 <template>
-  <section class="features">
-    <div class="container inner-container">
+  <section class="features py-5">
+    <div class="container inner-container py-5">
       <div class="text-wrapper d-flex justify-content-between mb-5">
         <div class="texts">
           <h2 class="mb-3">Popular features that your business needs</h2>
@@ -16,12 +16,16 @@
       <div class="cards">
         <div class="row row-cols-4 g-4">
           <div
-            class="feature col p-3 h-100 rounded"
+            class="feature-card col shadow p-4 mb-5 bg-body rounded"
             v-for="element in features"
             :key="element.id"
           >
-            <h5>{{ element.title }}</h5>
-            <font-awesome-icon :icon="element.icon" size="lg" />
+            <h5 class="mb-3">{{ element.title }}</h5>
+            <font-awesome-icon
+              :icon="element.icon"
+              :color="element.colorClass"
+              size="3x"
+            />
           </div>
         </div>
       </div>
@@ -35,38 +39,47 @@ export default {
   name: "Features",
   data() {
     return {
+      isHovering: false,
       features: [
         {
           title: "Customized Invoices",
           icon: "fa-solid fa-file-invoice-dollar",
+          colorClass: "blue",
         },
         {
           title: "Stock Management",
           icon: "fa-solid fa-arrow-trend-up",
+          colorClass: "salmon",
         },
         {
           title: "Receivable & Payables",
           icon: "fa-solid fa-comments-dollar",
+          colorClass: "torquoise",
         },
         {
           title: "Manage Buying",
           icon: "fa-solid fa-credit-card",
+          colorClass: "blue",
         },
         {
           title: "Powerful & Secure",
           icon: "fa-solid fa-shield-halved",
+          colorClass: "salmon",
         },
         {
           title: "Fastest Return Filing",
           icon: "fa-solid fa-folder-open",
+          colorClass: "torquoise",
         },
         {
           title: "Monthly Detailed",
           icon: "fa-solid fa-calendar-day",
+          colorClass: "blue",
         },
         {
           title: "Product Management",
           icon: "fa-solid fa-list-check",
+          colorClass: "salmon",
         },
       ],
     };
@@ -78,8 +91,12 @@ export default {
 @import "../assets/style/style.scss";
 
 section.features {
+  height: 650px;
+  width: 100%;
+  //   height: 100%;
   background-image: url("../assets/img/14.png");
   background-repeat: no-repeat;
+  background-position: -70%;
   .text-wrapper {
     button.btn {
       background-color: $brandBlue;
@@ -91,9 +108,18 @@ section.features {
       }
     }
     .cards {
-      .feature {
-        background-color: $white;
-        box-shadow: 0 5px 15px rgba(235, 235, 235, 0.685);
+      div.feature-card {
+        // box-shadow: 0 5px 15px rgba(226, 226, 226, 0.685);
+
+        .blue {
+          fill: $brandBlue;
+        }
+        .salmon {
+          fill: $brandSalmon;
+        }
+        .torquoise {
+          fill: $brandTorquoise;
+        }
       }
     }
   }

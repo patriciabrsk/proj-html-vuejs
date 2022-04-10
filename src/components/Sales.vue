@@ -1,5 +1,5 @@
 <template>
-  <section class="sales container d-flex inner-container mb-5">
+  <section class="sales container d-flex inner-container">
     <div class="text-wrapper me-5">
       <div class="text">
         <h2>Get tips and tricks on how to skyrocket your sales.</h2>
@@ -67,7 +67,7 @@ section.sales {
         border: 1px solid transparent;
         &:hover {
           border: 1px solid $borderGrey1;
-          box-shadow: 0 5px 15px rgba(235, 235, 235, 0.685);
+          box-shadow: 0 5px 15px rgba(226, 226, 226, 0.685);
         }
         .card-text:hover h5 {
           color: $brandBlue;
