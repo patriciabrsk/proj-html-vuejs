@@ -8,7 +8,7 @@
         </div>
       </div>
       <div class="content d-flex jsutify-content-between">
-        <div class="map">
+        <div class="map w-50">
           <div class="image mb-2">
             <img
               src="../assets/img/StaticMapService.GetMapIma.png"
@@ -17,20 +17,57 @@
             />
           </div>
         </div>
-        <div class="contact-area px-4">
+        <div class="contact-area px-4 w-50">
           <div class="logo mb-5">
             <img src="../assets/img/35.png" alt="Sofbox logo" />
           </div>
-          <div class="contact-info">
+          <div class="contact-info mb-5">
             <h5 class="mb-3">9840 Shore St. Fond Du Lac, WI 54935</h5>
             <p class="phone-number mb-0">0 1223 456 789</p>
             <span class="email">mail@sofbox.com</span>
           </div>
-          <div class="socials">
-            <div class="fb p-3 border">FB</div>
-            <div class="twitter p-3 border">TW</div>
-            <div class="twitter p-3 border">GH</div>
-            <div class="twitter p-3 border">IG</div>
+          <div class="socials d-flex py-2 mb-5">
+            <div class="fb p-2 rounded border me-2">FB</div>
+            <div class="twitter p-2 rounded border me-2">TW</div>
+            <div class="twitter p-2 rounded border me-2">GH</div>
+            <div class="twitter p-2 rounded border me-2">IG</div>
+          </div>
+          <h4 class="mb-3">Get in Touch</h4>
+          <div class="contact-input">
+            <div class="row d-flex justify-content-between w-100 mb-4">
+              <div class="col-6">
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Your name"
+                  class="form-control"
+                />
+              </div>
+              <div class="col-6">
+                <input
+                  type="text"
+                  id="email"
+                  placeholder="Your email"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-12">
+                <input
+                  type="text"
+                  id="email"
+                  placeholder="Your email"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <textarea
+              class="form-control"
+              placeholder="Your Message"
+              id="text-area"
+              rows="10"
+            ></textarea>
           </div>
         </div>
       </div>
