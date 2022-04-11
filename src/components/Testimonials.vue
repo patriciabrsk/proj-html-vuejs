@@ -24,7 +24,7 @@
               <h5 class="me-2">{{ info.name }}</h5>
               <span> - {{ info.position }}</span>
             </div>
-            <p class="pb-2">{{ info.description }}</p>
+            <p class="pb-2 px-3">{{ info.description }}</p>
           </div>
         </div>
       </div>
@@ -83,14 +83,18 @@ section#testimonials {
     }
     div.cards {
       .testimonial-card {
-        background-color: $white;
-        box-shadow: 0 5px 15px rgba(226, 226, 226, 0.685);
+        // background-color: $white;
+        box-shadow: 0 5px 15px rgba($grey, 0.685);
         width: 480px;
         img {
           width: 70px;
           border: 1px solid $borderGrey1;
         }
         div.text {
+          background-image: url("../assets/img/quote-left-solid.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+
           span {
             color: $brandTxtGrey;
           }

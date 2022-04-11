@@ -1,5 +1,5 @@
 <template>
-  <section id="latest">
+  <section id="latest" class="mb-5">
     <div class="section-wrapper container inner-container">
       <div class="text-wrapper d-flex justify-content-center mb-4 pt-0">
         <div class="text text-center mb-5">

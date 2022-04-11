@@ -6,7 +6,7 @@
     <Features />
     <Testimonials />
     <Latest />
-
+    <Contact />
     <Footer />
   </main>
 </template>
@@ -18,8 +18,9 @@ import Sales from "./Sales.vue";
 import Features from "./Features.vue";
 import Testimonials from "./Testimonials.vue";
 import Latest from "./Latest.vue";
+import Contact from "./Contact.vue";
 
-// import Footer from "./Footer.vue";
+import Footer from "./Footer.vue";
 
 export default {
   name: "MyMain",
@@ -30,7 +31,8 @@ export default {
     Features,
     Testimonials,
     Latest,
-    // Footer,
+    Contact,
+    Footer,
   },
 };
 </script>

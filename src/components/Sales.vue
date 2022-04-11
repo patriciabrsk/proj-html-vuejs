@@ -67,7 +67,8 @@ section#sales {
         border: 1px solid transparent;
         &:hover {
           border: 1px solid $borderGrey1;
-          box-shadow: 0 5px 15px rgba(226, 226, 226, 0.685);
+          box-shadow: 0 5px 15px rgba($grey, 0.685);
+          //   box-shadow: 0 5px 15px rgba(226, 226, 226, 0.685);
           cursor: pointer;
         }
         .card-text:hover h5 {

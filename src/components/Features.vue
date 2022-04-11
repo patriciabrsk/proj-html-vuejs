@@ -110,7 +110,8 @@ section#features {
   .cards {
     .feature-card {
       background-color: $white;
-      box-shadow: 0 5px 15px rgba(226, 226, 226, 0.685);
+      box-shadow: 0 5px 15px rgba($grey, 0.685);
+      //   box-shadow: 0 5px 15px rgba(226, 226, 226, 0.685);
 
       .blue {
         fill: $brandBlue;

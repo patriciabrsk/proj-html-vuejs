@@ -49,6 +49,9 @@ section#jumbotron {
     }
     button.btn {
       background-color: $brandBlue;
+      &:hover {
+        background-color: $brandMatteBlack;
+      }
     }
   }
 
