@@ -13,13 +13,14 @@
           <li
             v-for="(link, index) in headerLinks"
             :key="index"
-            class="list-unstyled me-4 py-3"
+            class="list-unstyled me-4 py-2 fw-normal"
+            :class="{ active: link.current }"
           >
             <a
               class="text-decoration-none"
-              :class="{ active: link.current }"
               :href="link.url"
-              ><h6 class="m-0">{{ link.text }}</h6>
+              :class="{ active: link.current }"
+              >{{ link.text }}
             </a>
           </li>
         </ul>
@@ -83,21 +84,23 @@ header {
   nav.navbar {
     padding: 20px 100px;
     img {
-      width: 50px;
+      width: 45px;
     }
   }
   .nav-leftside {
     ul.nav-links {
       li {
         border-bottom: 3px solid transparent;
+        color: $brandTxtDarkGrey;
         &:hover,
         &.active {
           border-bottom: 3px solid $brandBlue;
         }
         a {
+          font-weight: 500;
           color: $brandTxtDarkGrey;
-
-          &:hover {
+          &:hover,
+          &.active {
             color: $brandBlue;
           }
         }

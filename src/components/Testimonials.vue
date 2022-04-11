@@ -11,7 +11,9 @@
         </div>
       </div>
       <div class="cards d-flex justify-content-evenly">
-        <div class="testimonial-card shadow p-4 mb-5 bg-body rounded">ciao</div>
+        <div class="testimonial-card shadow p-4 mb-5 bg-body rounded">
+          <img src="" alt="" />
+        </div>
         <div class="testimonial-card shadow p-4 mb-5 bg-body rounded">ciao</div>
       </div>
     </div>
@@ -22,6 +24,9 @@
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Testimonials",
+  data() {
+    return {};
+  },
 };
 </script>
 
