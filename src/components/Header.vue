@@ -13,7 +13,7 @@
           <li
             v-for="(link, index) in headerLinks"
             :key="index"
-            class="list-unstyled me-4"
+            class="list-unstyled me-4 py-3"
           >
             <a
               class="text-decoration-none"
@@ -96,6 +96,10 @@ header {
         }
         a {
           color: $brandTxtDarkGrey;
+
+          &:hover {
+            color: $brandBlue;
+          }
         }
       }
     }

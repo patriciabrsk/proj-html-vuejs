@@ -17,7 +17,7 @@ import Sales from "./Sales.vue";
 import Features from "./Features.vue";
 import Testimonials from "./Testimonials.vue";
 
-import Footer from "./Footer.vue";
+// import Footer from "./Footer.vue";
 
 export default {
   name: "MyMain",
@@ -27,7 +27,7 @@ export default {
     Sales,
     Features,
     Testimonials,
-    Footer,
+    // Footer,
   },
 };
 </script>

@@ -1,17 +1,19 @@
 <template>
-  <section class="testimonials container inner-container">
-    <div class="text-wrapper container d-flex justify-content-center mb-4">
-      <div class="text text-center">
-        <h2>Our Testimonials</h2>
-        <p>
-          If you are planning on developing a product landing app or website,
-          take a look at this beautiful-crafted
-        </p>
+  <section class="testimonials">
+    <div class="container inner-container h-100">
+      <div class="text-wrapper container d-flex justify-content-center mb-4">
+        <div class="text text-center">
+          <h2>Our Testimonials</h2>
+          <p>
+            If you are planning on developing a product landing app or website,
+            take a look at this beautiful-crafted
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="cards d-flex justify-content-evenly">
-      <div class="testimonial-card shadow p-4 mb-5 bg-body rounded">ciao</div>
-      <div class="testimonial-card shadow p-4 mb-5 bg-body rounded">ciao</div>
+      <div class="cards d-flex justify-content-evenly">
+        <div class="testimonial-card shadow p-4 mb-5 bg-body rounded">ciao</div>
+        <div class="testimonial-card shadow p-4 mb-5 bg-body rounded">ciao</div>
+      </div>
     </div>
   </section>
 </template>
@@ -27,14 +29,17 @@ export default {
 @import "../assets/style/style.scss";
 
 section.testimonials {
-  div.text-wrapper {
-    background-image: url("../assets/img/15.png");
-    background-repeat: no-repeat;
-    p {
-      color: $brandTxtGrey;
-    }
-    .text {
-      width: 40%;
+  height: 100%;
+  background-image: url("../assets/img/15.png");
+  background-repeat: no-repeat;
+  .container {
+    div.text-wrapper {
+      p {
+        color: $brandTxtGrey;
+      }
+      .text {
+        width: 40%;
+      }
     }
   }
 }
