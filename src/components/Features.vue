@@ -1,5 +1,5 @@
 <template>
-  <section class="features py-5">
+  <section class="features py-5 mb-5">
     <div class="container inner-container py-5">
       <div class="text-wrapper d-flex justify-content-between mb-5">
         <div class="texts">
@@ -14,7 +14,7 @@
         </button>
       </div>
       <div class="cards">
-        <div class="row row-cols-4 g-4">
+        <div class="row row-cols-4 g-4 mb-5">
           <div
             class="feature-card col shadow p-4 mb-5 bg-body rounded"
             v-for="element in features"
@@ -96,7 +96,7 @@ section.features {
   //   height: 100%;
   background-image: url("../assets/img/14.png");
   background-repeat: no-repeat;
-  background-position: -70%;
+  background-position: -65%;
   .text-wrapper {
     button.btn {
       background-color: $brandBlue;

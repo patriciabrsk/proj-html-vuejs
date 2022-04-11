@@ -82,7 +82,7 @@ export default {
 header {
   height: 50px;
   nav.navbar {
-    padding: 20px 100px;
+    padding: 20px 120px;
     img {
       width: 45px;
     }
