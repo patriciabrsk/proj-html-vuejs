@@ -1,5 +1,5 @@
 <template>
-  <section class="features py-5 mb-5">
+  <section id="features" class="py-5 mb-5">
     <div class="container inner-container py-5">
       <div class="text-wrapper d-flex justify-content-between mb-5">
         <div class="texts">
@@ -15,18 +15,18 @@
       </div>
       <div class="cards">
         <div class="row row-cols-4 g-4 mb-5">
-          <div
-            class="feature-card col shadow p-4 mb-5 bg-body rounded"
-            v-for="element in features"
-            :key="element.id"
-          >
-            <h5 class="mb-3">{{ element.title }}</h5>
-            <font-awesome-icon
-              :icon="element.icon"
-              :color="element.colorClass"
-              size="3x"
-            />
+          <div class="col" v-for="element in features" :key="element.id">
+            <div class="feature-card col p-4 mb-5 rounded gx-3">
+              <h5 class="mb-3">{{ element.title }}</h5>
+              <font-awesome-icon
+                :icon="element.icon"
+                :color="element.colorClass"
+                size="3x"
+                class="py-2 mb-2"
+              />
+            </div>
           </div>
+          <div class="dots"></div>
         </div>
       </div>
     </div>
@@ -90,10 +90,9 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/style/style.scss";
 
-section.features {
+section#features {
   height: 650px;
   width: 100%;
-  //   height: 100%;
   background-image: url("../assets/img/14.png");
   background-repeat: no-repeat;
   background-position: -65%;
@@ -107,19 +106,20 @@ section.features {
         width: 60%;
       }
     }
-    .cards {
-      div.feature-card {
-        // box-shadow: 0 5px 15px rgba(226, 226, 226, 0.685);
+  }
+  .cards {
+    .feature-card {
+      background-color: $white;
+      box-shadow: 0 5px 15px rgba(226, 226, 226, 0.685);
 
-        .blue {
-          fill: $brandBlue;
-        }
-        .salmon {
-          fill: $brandSalmon;
-        }
-        .torquoise {
-          fill: $brandTorquoise;
-        }
+      .blue {
+        fill: $brandBlue;
+      }
+      .salmon {
+        fill: $brandSalmon;
+      }
+      .torquoise {
+        fill: $brandTorquoise;
       }
     }
   }

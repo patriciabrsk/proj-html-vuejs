@@ -5,6 +5,7 @@
     <Sales />
     <Features />
     <Testimonials />
+    <Latest />
 
     <Footer />
   </main>
@@ -16,6 +17,7 @@ import OnlineMarketing from "./OnlineMarketing.vue";
 import Sales from "./Sales.vue";
 import Features from "./Features.vue";
 import Testimonials from "./Testimonials.vue";
+import Latest from "./Latest.vue";
 
 // import Footer from "./Footer.vue";
 
@@ -27,6 +29,7 @@ export default {
     Sales,
     Features,
     Testimonials,
+    Latest,
     // Footer,
   },
 };

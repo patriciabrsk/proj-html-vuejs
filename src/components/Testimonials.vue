@@ -1,30 +1,30 @@
 <template>
-  <section class="testimonials">
-    <div class="graphic-divider py-5">
+  <section id="testimonials">
+    <div class="graphic-divider py-4">
       <div class="container inner-container h-100 py-5">
         <div class="text-wrapper container d-flex justify-content-center mb-4">
-          <div class="text text-center">
-            <h2>Our Testimonials</h2>
+          <div class="text text-center mb-5">
+            <h2 class="mb-3">Our Testimonials</h2>
             <p>
               If you are planning on developing a product landing app or
               website, take a look at this beautiful-crafted
             </p>
           </div>
         </div>
-        <div class="cards d-flex justify-content-evenly">
+        <div class="cards d-flex justify-content-around">
           <div
-            class="testimonial-card shadow p-4 mb-5 bg-body rounded pt-5"
+            class="testimonial-card p-4 mb-5 rounded pt-5"
             v-for="info in testimonials"
-            :key="info"
+            :key="info.id"
           >
             <div class="image text-center">
               <img :src="info.img" class="rounded-circle mb-5" alt="" />
             </div>
-            <div class="text d-flex justify-content-center mb-3">
+            <div class="text d-flex justify-content-center mb-4">
               <h5 class="me-2">{{ info.name }}</h5>
               <span> - {{ info.position }}</span>
             </div>
-            <p>{{ info.description }}</p>
+            <p class="pb-2">{{ info.description }}</p>
           </div>
         </div>
       </div>
@@ -62,19 +62,20 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/style/style.scss";
 
-section.testimonials {
-  background-color: $brandLtBlue;
-  height: 900px;
+section#testimonials {
+  //   background-color: $brandLtBlue;
+  background: linear-gradient(360deg, white 0%, $brandLtBlue 100%);
+  height: 800px;
+  p {
+    color: $brandTxtGrey;
+  }
   div.graphic-divider {
     background-image: url("../assets/img/15.png");
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
     background-position: left 100% top 0;
     .container {
       div.text-wrapper {
         padding-top: 50px;
-        p {
-          color: $brandTxtGrey;
-        }
         .text {
           width: 45%;
         }
@@ -82,7 +83,9 @@ section.testimonials {
     }
     div.cards {
       .testimonial-card {
-        width: 400px;
+        background-color: $white;
+        box-shadow: 0 5px 15px rgba(226, 226, 226, 0.685);
+        width: 480px;
         img {
           width: 70px;
           border: 1px solid $borderGrey1;

@@ -1,5 +1,5 @@
 <template>
-  <section class="online-marketing container inner-container mb-5">
+  <section id="online-marketing" class="container inner-container mb-5">
     <div class="row row-cols-3 d-flex py-5">
       <div
         class="d-flex flex-row col section-card mt-5 px-0"
@@ -43,7 +43,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/style/style.scss";
 
-section.online-marketing {
+section#online-marketing {
   height: 400px;
 
   div.icon {

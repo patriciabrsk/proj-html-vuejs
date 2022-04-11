@@ -1,5 +1,5 @@
 <template>
-  <section class="sales container d-flex inner-container">
+  <section id="sales" class="container d-flex inner-container">
     <div class="text-wrapper me-5">
       <div class="text">
         <h2>Get tips and tricks on how to skyrocket your sales.</h2>
@@ -57,7 +57,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/style/style.scss";
 
-section.sales {
+section#sales {
   p {
     color: $brandTxtGrey;
   }

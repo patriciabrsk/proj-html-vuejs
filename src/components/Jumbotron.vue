@@ -1,6 +1,7 @@
 <template>
   <section
-    class="jumbotron container d-flex align-items-center rounded p-5 mb-5"
+    id="jumbotron"
+    class="container d-flex align-items-center rounded p-5 mb-5"
   >
     <div class="text-box ps-2">
       <!-- <h1>{{ jumbotron.title }}</h1> -->
@@ -31,7 +32,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/style/style.scss";
 
-section.jumbotron {
+section#jumbotron {
   background-color: #f2f7ff;
   height: 400px;
 
