@@ -94,6 +94,7 @@ header {
         color: $brandTxtDarkGrey;
         &:hover,
         &.active {
+          color: $brandBlue;
           border-bottom: 3px solid $brandBlue;
         }
         a {

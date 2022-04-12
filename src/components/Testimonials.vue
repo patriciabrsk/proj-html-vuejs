@@ -86,15 +86,15 @@ section#testimonials {
         // background-color: $white;
         box-shadow: 0 5px 15px rgba($grey, 0.685);
         width: 480px;
+        background-image: url("../assets/img/quote-left-solid.svg");
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
         img {
           width: 70px;
           border: 1px solid $borderGrey1;
         }
         div.text {
-          background-image: url("../assets/img/quote-left-solid.svg");
-          background-repeat: no-repeat;
-          background-position: center;
-
           span {
             color: $brandTxtGrey;
           }

@@ -15,6 +15,7 @@ import { faFolderOpen } from "@fortawesome/free-solid-svg-icons";
 import { faCalendarDay } from "@fortawesome/free-solid-svg-icons";
 import { faListCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
   faMagnifyingGlass,
@@ -27,7 +28,8 @@ library.add(
   faShieldHalved,
   faFolderOpen,
   faCalendarDay,
-  faListCheck
+  faListCheck,
+  faQuoteLeft
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

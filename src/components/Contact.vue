@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="py-5 mt-5">
+  <section id="contact" class="py-5 my-5">
     <div class="section-wrapper container inner-container py-5 mt-5">
       <div class="text-wrapper d-flex justify-content-center mb-4 pt-0">
         <div class="text text-center mb-5">
@@ -57,17 +57,21 @@
                 <input
                   type="text"
                   id="email"
-                  placeholder="Your email"
+                  placeholder="Your subject"
                   class="form-control"
                 />
               </div>
             </div>
             <textarea
-              class="form-control"
+              class="form-control mb-4"
               placeholder="Your Message"
+              v-model="newMessage"
               id="text-area"
               rows="10"
             ></textarea>
+            <button type="submit" class="btn text-white px-3">
+              Send Message
+            </button>
           </div>
         </div>
       </div>
@@ -79,6 +83,11 @@
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Contact",
+  data() {
+    return {
+      newMessage: "",
+    };
+  },
 };
 </script>
 
@@ -90,6 +99,9 @@ section#contact {
   p,
   span {
     color: $brandTxtGrey;
+  }
+  button {
+    background-color: $brandBlue;
   }
 }
 </style>
