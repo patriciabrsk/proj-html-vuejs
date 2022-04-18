@@ -40,14 +40,14 @@ export default {
     return {
       testimonials: [
         {
-          img: require("../assets/img/26.jpeg"),
+          img: require("../../assets/img/26.jpeg"),
           name: "Julia Ann",
           position: " COO Sofbox",
           description:
             "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip",
         },
         {
-          img: require("../assets/img/27.jpeg"),
+          img: require("../../assets/img/27.jpeg"),
           name: "Mac Znder",
           position: " Manager Sofbox",
           description:
@@ -60,7 +60,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/style/style.scss";
+@import "../../assets/style/style.scss";
 
 section#testimonials {
   //   background-color: $brandLtBlue;
@@ -70,7 +70,7 @@ section#testimonials {
     color: $brandTxtGrey;
   }
   div.graphic-divider {
-    background-image: url("../assets/img/15.png");
+    background-image: url("../../assets/img/15.png");
     background-repeat: no-repeat;
     background-position: left 100% top 0;
     .container {
@@ -86,7 +86,7 @@ section#testimonials {
         // background-color: $white;
         box-shadow: 0 5px 15px rgba($grey, 0.685);
         width: 480px;
-        background-image: url("../assets/img/quote-left-solid.svg");
+        background-image: url("../../assets/img/quote-left-solid.svg");
         background-size: 50px;
         background-repeat: no-repeat;
         background-position: center;

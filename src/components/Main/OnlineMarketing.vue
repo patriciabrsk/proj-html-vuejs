@@ -33,7 +33,7 @@ export default {
   name: "OnlineMarketing",
   data() {
     return {
-      marketingImg: require("../assets/img/24.png"),
+      marketingImg: require("../../assets/img/24.png"),
       marketingList: ["SEO", "SEM", "Website Strategy", "Social Management"],
     };
   },
@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/style/style.scss";
+@import "../../assets/style/style.scss";
 
 section#online-marketing {
   height: 400px;

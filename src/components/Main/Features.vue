@@ -88,12 +88,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/style/style.scss";
+@import "../../assets/style/style.scss";
 
 section#features {
   height: 650px;
   width: 100%;
-  background-image: url("../assets/img/14.png");
+  background-image: url("../../assets/img/14.png");
   background-repeat: no-repeat;
   background-position: -65%;
   .text-wrapper {

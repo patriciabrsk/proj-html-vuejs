@@ -36,17 +36,17 @@ export default {
     return {
       posts: [
         {
-          image: require("../assets/img/19.jpg"),
+          image: require("../../assets/img/19.jpg"),
           title: "Life Lack Meaning",
           text: "It is a long established fact that a reader will be distracted by the readable",
         },
         {
-          image: require("../assets/img/18.jpg"),
+          image: require("../../assets/img/18.jpg"),
           title: "Life Lack Meaning",
           text: "It is a long established fact that a reader will be distracted by the readable",
         },
         {
-          image: require("../assets/img/17.jpg"),
+          image: require("../../assets/img/17.jpg"),
           title: "Life Lack Meaning",
           text: "It is a long established fact that a reader will be distracted by the readable",
         },
@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/style/style.scss";
+@import "../../assets/style/style.scss";
 
 section#latest {
   height: 500px;

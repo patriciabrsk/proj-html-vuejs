@@ -36,17 +36,17 @@ export default {
   name: "Sales",
   data() {
     return {
-      salesImg: require("../assets/img/509.jpeg"),
+      salesImg: require("../../assets/img/509.jpeg"),
       sales: [
         {
           title: "Reporting Analysis",
           text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-          iconSrc: require("../assets/img/510.png"),
+          iconSrc: require("../../assets/img/510.png"),
         },
         {
           title: "Technical SEO Audit",
           text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-          iconSrc: require("../assets/img/511.png"),
+          iconSrc: require("../../assets/img/511.png"),
         },
       ],
     };
@@ -55,7 +55,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/style/style.scss";
+@import "../../assets/style/style.scss";
 
 section#sales {
   p {

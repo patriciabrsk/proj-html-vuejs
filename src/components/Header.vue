@@ -15,11 +15,13 @@
             :key="index"
             class="list-unstyled me-4 py-2 fw-normal"
             :class="{ active: link.current }"
+            @click="toggle()"
           >
             <a
               class="text-decoration-none"
               :href="link.url"
               :class="{ active: link.current }"
+              @click="toggle()"
               >{{ link.text }}
             </a>
           </li>
@@ -44,6 +46,7 @@ export default {
   data() {
     return {
       logo: require("../assets/img/logo-2.png"),
+      isClicked: false,
       headerLinks: [
         {
           text: "Home",
@@ -72,6 +75,12 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    toggle() {
+      this.link.current = !this.link.current;
+      this.isClicked = !this.isClicked;
+    },
   },
 };
 </script>

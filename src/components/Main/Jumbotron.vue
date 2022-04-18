@@ -23,14 +23,14 @@ export default {
   name: "JumboTron",
   data() {
     return {
-      jumbotronImg: require("../assets/img/27-1.png"),
+      jumbotronImg: require("../../assets/img/27-1.png"),
     };
   },
 };
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/style/style.scss";
+@import "../../assets/style/style.scss";
 
 section#jumbotron {
   background-color: #f2f7ff;
