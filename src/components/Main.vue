@@ -19,7 +19,6 @@ import Features from "./Main/Features.vue";
 import Testimonials from "./Main/Testimonials.vue";
 import Latest from "./Main/Latest.vue";
 import Contact from "./Main/Contact.vue";
-import Footer from "./Footer.vue";
 
 export default {
   name: "MyMain",
@@ -31,7 +30,6 @@ export default {
     Testimonials,
     Latest,
     Contact,
-    Footer,
   },
 };
 </script>

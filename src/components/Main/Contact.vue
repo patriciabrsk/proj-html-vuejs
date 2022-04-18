@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="py-5 my-5">
+  <section id="contact" class="py-5 h-100 my-5">
     <div class="section-wrapper container inner-container py-5 mt-5">
       <div class="text-wrapper d-flex justify-content-center mb-4 pt-0">
         <div class="text text-center mb-5">
